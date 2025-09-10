@@ -10,4 +10,17 @@ class PrincipalController extends Controller
     {
         return view('bakery');
     }
+       public function sobre()
+    {
+        return view('sobre');
+    }
+    public function contato(){
+        return view('contato');
+    }
+
+    public function enviarContato(Request $request){
+        dd($request ->post());
+    }
 }
+
+
